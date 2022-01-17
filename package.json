@@ -1,0 +1,29 @@
+{
+  "name": "expo-crypto-polyfills",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Draftbit",
+  "description": "Polyfills needed to build crypto apps on Expo without ejecting",
+  "scripts": {
+    "postinstall": "yarn yarn-deduplicate",
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "crypto-browserify": "^3.12.0",
+    "expo-file-system": "~13.1.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "react-native-get-random-values": "^1.7.2",
+    "react-native-tcp": "^4.0.0",
+    "readable-stream": "^3.6.0",
+    "stream-http": "^3.2.0",
+    "vm-browserify": "^1.1.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "yarn-deduplicate": "^3.1.0"
+  }
+}
