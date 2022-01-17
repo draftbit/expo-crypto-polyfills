@@ -1,6 +1,6 @@
 # Expo Crypto Polyfills
 
-Use this to polyfill crypto-related libraries without having to eject from Expo.
+Use this to polyfill crypto-related libraries without having to eject from Expo. The goal of this library is to continue to work across all Expo-supported ecosystems (ios,android,web)
 
 ## Example
 
@@ -12,10 +12,9 @@ In your Expo project, create a metro.config.js file, then set extraNodeModules t
 
 ```js
 // metro.config.js
-const extraNodeModules = require("expo-crypto-polyfills");
 module.exports = {
   resolver: {
-    extraNodeModules,
+    extraNodeModules: require("expo-crypto-polyfills"),
   },
 };
 ```
